@@ -39,8 +39,7 @@ class CircularLinkedList:
 
         while cur:
             print(cur.data)
-            cur = cur.next
-            if cur == self.head:
+            if (cur := cur.next) == self.head:
                 break
 
     def __len__(self):
@@ -48,15 +47,13 @@ class CircularLinkedList:
         count = 0
         while cur:
             count += 1
-            cur = cur.next
-            if cur == self.head:
+            if (cur := cur.next) == self.head:
                 break
         return count
 
     def split_list(self):
-        size = len(self)    
 
-        if size == 0:
+        if (size := len(self)) == 0:
             return None
         if size == 1:
             return self.head

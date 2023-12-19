@@ -39,8 +39,7 @@ class CircularLinkedList:
 
         while cur:
             print(cur.data)
-            cur = cur.next
-            if cur == self.head:
+            if (cur := cur.next) == self.head:
                 break
 
 
