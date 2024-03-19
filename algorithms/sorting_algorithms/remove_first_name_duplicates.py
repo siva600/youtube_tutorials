@@ -4,7 +4,7 @@
 # (John, Carmack), (Bill, Gates), (Elon, Musk)
 # or
 # (John, Romero), (Bill, Gates), (Elon, Musk)
-A = [("John", "Carmack"), ("John" "Romero"), ("Bill", "Gates"), ("Elon", "Musk")]
+A = [("John", "Carmack"), "John", "Romero", ("Bill", "Gates"), ("Elon", "Musk")]
 
 
 class FirstLastName():
