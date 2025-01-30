@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 # Using the requests module, we use the "get" function
 # provided to access the webpage provided as an
 # argument to this function:
-result = requests.get("https://www.google.com/")
+result = requests.get("https://www.google.com/", timeout=60)
 
 # To make sure that the website is accessible, we can
 # ensure that we obtain a 200 OK response to indicate

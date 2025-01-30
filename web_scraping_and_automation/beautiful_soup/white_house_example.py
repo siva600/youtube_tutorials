@@ -12,7 +12,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-result = requests.get("https://www.whitehouse.gov/briefings-statements/")
+result = requests.get("https://www.whitehouse.gov/briefings-statements/", timeout=60)
 src = result.content
 soup = BeautifulSoup(src, 'lxml')
 
